@@ -5,8 +5,8 @@ opt.relativenumber = true
 opt.number = true
 
 -- tabbing and indentation --
-opt.tabstop = 4
-opt.shiftwidth = 4 
+opt.tabstop = 8 
+opt.shiftwidth = 8 
 opt.expandtab = true
 opt.autoindent = true
 
@@ -18,7 +18,9 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- cursor line --
-opt.cursorline = true
+opt.cursorline = true 
+
+opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 
 -- appearance --
 opt.termguicolors = true

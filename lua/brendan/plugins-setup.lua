@@ -31,7 +31,8 @@ return packer.startup(function(use)
   -- use 'foo2/bar2.nvim'
 
   use 'wbthomason/packer.nvim'
-  use 'bluz71/vim-nightfly-colors'
+  -- use 'bluz71/vim-nightfly-colors'
+  use { "ellisonleao/gruvbox.nvim" }
   use 'christoomey/vim-tmux-navigator'
   use 'szw/vim-maximizer'
   use 'tpope/vim-surround'
