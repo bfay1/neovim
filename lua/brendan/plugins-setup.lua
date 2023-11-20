@@ -73,9 +73,16 @@ return packer.startup(function(use)
           require('nvim-treesitter.install').update({ with_sync = true})
       end,
   }
-  use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'lewis6991/gitsigns.nvim'
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua' -- recommended if need floating window support
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-treesitter/nvim-treesitter'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
